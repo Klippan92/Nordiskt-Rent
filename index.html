@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nordisk Rent</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      background: #fff;
+      color: #111;
+    }
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      padding: 2rem 1rem;
+      max-width: 1100px;
+      margin: auto;
+    }
+    .header-content {
+      max-width: 500px;
+    }
+    .logo {
+      height: 150px;
+      margin-bottom: 1rem;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    header p {
+      font-size: 1.1rem;
+      color: #555;
+      margin-bottom: 1rem;
+    }
+    .btn {
+      background-color: #2e8b57;
+      color: white;
+      padding: 0.75rem 2rem;
+      border: none;
+      border-radius: 6px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+    .header-illustration {
+      max-width: 350px;
+    }
+    section {
+      padding: 2rem 1rem;
+      max-width: 900px;
+      margin: auto;
+    }
+    h2 {
+      font-size: 1.75rem;
+      margin-bottom: 1rem;
+    }
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 2rem;
+      text-align: center;
+    }
+    .services-grid img {
+      width: 80px;
+      height: 80px;
+      background-color: #ffffff;
+      padding: 16px;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      margin-bottom: 0.5rem;
+    }
+    .services-grid p {
+      font-size: 1.1rem;
+      margin-top: 0.5rem;
+    }
+    .services-grid div {
+      padding: 1rem;
+    }
+    .prices li {
+      margin-bottom: 0.5rem;
+      font-size: 1.1rem;
+    }
+    .booking-form {
+      background: #f2f2f2;
+      border-radius: 10px;
+      padding: 2rem;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 0.75rem;
+      margin: 0.5rem 0;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      font-size: 1rem;
+    }
+    iframe {
+      width: 100%;
+      height: 300px;
+      border: none;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <img src="logo-nordicrent.png" alt="Nordisk Rent logga" class="logo">
+      <h1>Städtjänster för ditt hem eller företag</h1>
+      <p>Vi erbjuder professionell städning och målning till konkurrenskraftiga priser.</p>
+      <button class="btn">Boka</button>
+    </div>
+    <img src="header-image.png" class="header-illustration" alt="Städare illustration">
+  </header>
+
+  <section>
+    <h2>Tjänster</h2>
+    <div class="services-grid">
+      <div><img src="icons/home.png"><p>Hemstädning</p></div>
+      <div><img src="icons/move.png"><p>Flyttstädning</p></div>
+      <div><img src="icons/office.png"><p>Kontorsstädning</p></div>
+      <div><img src="icons/windows.png"><p>Fönsterputsning</p></div>
+      <div><img src="icons/construction.png"><p>Byggstädning</p></div>
+      <div><img src="icons/stairs.png"><p>Trappstädning</p></div>
+      <div><img src="icons/painting.png"><p>Målning</p></div>
+      <div><img src="icons/special.png"><p>Specialstädning</p></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Priser</h2>
+    <ul class="prices">
+      <li><strong>Hemstädning</strong> – från 250 kr/h</li>
+      <li><strong>Flyttstädning</strong> – från 30 kr/m²</li>
+      <li><strong>Fönsterputsning</strong> – från 300 kr</li>
+      <li><strong>Målning</strong> – offert vid kontakt</li>
+    </ul>
+  </section>
+
+  <section class="booking-form">
+    <h2>Bokning</h2>
+    <form>
+      <select required>
+        <option value="">Välj tjänst</option>
+        <option>Hemstädning</option>
+        <option>Flyttstädning</option>
+        <option>Kontorsstädning</option>
+        <option>Fönsterputsning</option>
+        <option>Byggstädning</option>
+        <option>Trappstädning</option>
+        <option>Målning</option>
+        <option>Specialstädning</option>
+      </select>
+      <input type="text" placeholder="Namn" required>
+      <input type="text" placeholder="Adress" required>
+      <input type="tel" placeholder="Telefon" required>
+      <input type="date" required>
+      <textarea placeholder="Meddelande"></textarea>
+      <button type="submit" class="btn">Skicka bokning</button>
+    </form>
+  </section>
+
+  <section>
+    <h2>Om oss</h2>
+    <p>Vi på Nordisk Rent är ett engagerat team som brinner för kvalitet och service. Vårt mål är att leverera rena miljöer och nöjda kunder – varje gång. Vi arbetar med både privatpersoner och företag.</p>
+  </section>
+
+  <section>
+    <h2>Hitta oss</h2>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d21310.152101196833!2d18.0480414!3d59.3293235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTnCsDE5JzQ2LjMiTiAxOMKwMDMnMDQuMyJF!5e0!3m2!1ssv!2sse!4v1617786600000" allowfullscreen="" loading="lazy"></iframe>
+  </section>
+</body>
+</html>
